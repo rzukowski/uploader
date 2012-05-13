@@ -1,23 +1,23 @@
 <%= stylesheet_link_tag 'style' %>
-<div id="menu">Rafał Żukowski</div>
+<div id="menu">Rafał Żukowski jesteś: <span id="status"> sprawdzam...</span></div>
+<script>
+var statusElem = document.getElementById('status')
 
-<div id="post">
-<table>
-  <tr>
-    <th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+setInterval(function () {
+  statusElem.className = navigator.onLine ? 'online' : 'offline';
+  statusElem.innerHTML = navigator.onLine ? 'online' : 'offline';  
+}, 250);</script>
+<h2><%= link_to 'Zobacz zdjęcia', pictures_path %></h2>
 
 <% @posts.each do |post| %>
-<tr><b>Dodane:</b> <%= post.created_at %></tr>
-  <tr>
-    <td><%= post.content %></td>
-  </tr>
-<% end %>
-</table>
+<div class="post">
+<b>Dodane:</b> <%= post.created_at %></td>
+<p><%= post.content %></p>
 </div>
+
+<% end %>
+
+
 <br />
-<%= link_to 'Zobacz zdjęcia', pictures_path %>
+
 <%= link_to 'New Post', new_post_path %>
