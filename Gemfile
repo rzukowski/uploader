@@ -6,12 +6,12 @@ gem 'rails', '3.2.2'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'carrierwave'
 gem 'therubyracer'
-group :production do    
-    gem 'pg', '0.12.2'  
-end  
-group :development do  
-    gem 'sqlite3', '1.3.4'  
+group :production do
+	gem 'pg', '0.12.2'  
 end
+group :development, :test do 
+	gem 'sqlite3', '1.3.6' 
+end 
 gem 'json'
 gem 'simple_form'
 # Gems used only for assets and not required
