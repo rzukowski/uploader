@@ -1,0 +1,23 @@
+<%= stylesheet_link_tag 'style' %>
+<div id="menu">Rafał Żukowski</div>
+
+<div id="post">
+<table>
+  <tr>
+    <th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+<tr><b>Dodane:</b> <%= post.created_at %></tr>
+  <tr>
+    <td><%= post.content %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+<%= link_to 'Zobacz zdjęcia', pictures_path %>
+<%= link_to 'New Post', new_post_path %>

@@ -1,0 +1,93 @@
+
+body{
+margin: 0px 0px 0px 0px;
+background-color:#BEFA73;
+}
+#menu {
+width:100%;
+margin:0px;
+padding:5px 1px 1px 5px;
+color:white;
+font-weight:bold;
+font-size:15px;
+background-color:#75CE07;
+height:30px;
+-moz-box-shadow: 0 3px 6px #6A6A6A;
+}
+
+#post {margin:20px 100px 10px 100px;
+background-color:#75CE07;
+width:90%;
+padding:10px 10px 10px 10px;
+-moz-box-shadow: 0 3px 6px #6A6A6A;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:10px;
+-moz-border-radius-bottomleft:15px;
+-moz-border-radius-bottomright:30px;
+box-shadow: 0 3px 6px #6A6A6A;
+border-radius-topleft:5px;
+border-radius-topright:10px;
+border-radius-bottomleft:15px;
+border-radius-bottomright:30px;	
+border-radius: 12px;
+-webkit-box-shadow: 0 3px 6px #6A6A6A;
+-webkit-border-radius-topleft:5px;
+-webkit-border-radius-topright:10px;
+-webkit-border-radius-bottomleft:15px;
+-webkit-border-radius-bottomright:30px;
+}
+
+#pictures {
+height:26%;
+width:160px;
+margin: 5% 0% 4% 2%;
+float:left;
+
+
+}
+#text{
+text-align:left;
+margin: 0% 0% 4% 15%;
+padding: 0 0 0 6px;
+height:900px;
+}
+
+ul li img {
+height:10%;
+width:10%;
+-webkit-transform: rotate(-2deg);
+-moz-transform: rotate(-2deg);
+-moz-transform: rotate(-2deg);
+}
+
+ul li:nth-child(even) img {
+height:10%;
+width:10%;
+-webkit-transform: rotate(2deg);
+-moz-transform: rotate(2deg);
+
+}
+ul li img:hover{
+-moz-transform: scale(1.1);
+
+}
+ul
+{
+    list-style-type: none;
+}
+
+img{ background: white; display: inline; float: left; margin: 0 0 27px 30px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: "Marker Felt", sans-serif; text-decoration: none; color: #333; font-size: 18px; -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);}
+p#uzytkownicy {
+clear: both;
+}
+
+ p#upload{
+ clear:both;
+ }
+p.terminal {
+font-size:15px;
+width:50%;
+background-color:black;
+color:white;
+}
+

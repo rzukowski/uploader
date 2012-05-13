@@ -1,0 +1,43 @@
+<div id="menu"><%= link_to "Strona główna", root_url%></div>
+<h1>Zdjęcia</h1>
+
+<p id="test"> Bądź pierwszy - dodaj zdjęcie! </p>
+
+
+
+
+<ul>
+<% @pictures.each do |picture| %>
+
+ <li>
+    <%= image_tag(picture.image)%></li>
+<% end %></ul>
+<p id="upload">
+<%= form_for(@picture) do |f| %>
+  <% if @picture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
+
+      <ul>
+      <% @picture.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+  
+    <%= f.file_field :image %>
+  </div>
+    <%= f.button :Wyślij%>
+  </div>
+<% end %>
+</div>
+<% if @pic_count > 0 %>
+<script>
+document.getElementById('test').hidden = true;
+</script>
+<%end%>
+<br />
+
