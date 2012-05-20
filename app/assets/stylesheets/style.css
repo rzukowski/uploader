@@ -1,8 +1,20 @@
-
 body{
 margin: 0px 0px 0px 0px;
 background-color:#BEFA73;
 }
+div#content {
+    display: none;
+    }
+ 
+div#loading {
+    top: 200 px;
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    width: 160px;
+    height: 24px;
+    cursor: wait;
+    }
 #menu {
 width:100%;
 margin:0px;
